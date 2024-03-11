@@ -23,4 +23,6 @@ Backend API Github Repo: [https://github.com/hnagarkoti/jobportal-backend]
 Some Sample Images of UI & Backend Postman API calls.
 # Recruiter Home Page for Job Search
 
-https://raw.githubusercontent.com/hnagarkoti/jobportal-ui/candidate-listing-page/public/images/After%20Login.png
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://raw.githubusercontent.com/hnagarkoti/jobportal-ui/candidate-listing-page/public/images/After%20Login.png" width="200" alt="Nest Logo" /></a>
+</p>

@@ -64,6 +64,7 @@ const Candidates = ({ className, ...props }: CardProps) => {
 
     const onFilterBySkills = (val: string[]) => {
         console.log(`onFilter Change called`, val)
+        
     }
 
     useEffect(() => {

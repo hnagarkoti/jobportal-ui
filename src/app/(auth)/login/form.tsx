@@ -20,28 +20,28 @@ export const Form = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
-      // const res = await signIn(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/auth/candidates/login`, {
+      // const res = await signIn(`${process.env.NEXT_PUBLIC_BACKEND_API}/api/v1/auth/candidates/login`, {
       //   redirect: false,
       //   email,
       //   password,
       //   callbackUrl
       // })
       const data = {
-        email,
-        password
+        username: email,
+        password: password,
       }
-      const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/auth/candidates/login`, data, {
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_API}/auth/candidates/login`, data, {
         headers: {
           'Content-Type': 'application/json'
         }
       })
 
       console.log('Res', res)
-      // if (!res?.error) {
-      //   router.push(callbackUrl)
-      // } else {
-      //   setError('Invalid email or password')
-      // }
+      if (!res?.user) {
+        router.push(`/candidates`)
+      } else {
+        setError('Invalid email or password')
+      }
     } catch (err: any) {}
   }
 

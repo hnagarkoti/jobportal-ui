@@ -21,3 +21,6 @@ You must be setting up .env file for React Code as : [NEXT_PUBLIC_BACKEND_API=ht
 Backend API Github Repo: [https://github.com/hnagarkoti/jobportal-backend]
 
 Some Sample Images of UI & Backend Postman API calls.
+# Recruiter Home Page for Job Search
+
+https://raw.githubusercontent.com/hnagarkoti/jobportal-ui/candidate-listing-page/public/images/After%20Login.png
